@@ -264,7 +264,10 @@ export const Home = () => {
         <ModalComp
           btnText={loading ? "Loading..." : "Save"}
           onClickContinue={() => handleSubmit()}
-          onClickClose={() => setAddModal({ visible: false, mode: "add" })}
+          onClickClose={() => {
+            setAddModal({ visible: false, mode: "add" });
+            resetForm();
+          }}
         >
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">

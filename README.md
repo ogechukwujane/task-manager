@@ -9,8 +9,8 @@ To run the app locally:
 **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/task-manager-app.git
-cd task-manager-app
+git clone https://github.com/ogechukwujane/task-manager.git
+cd task-manager
 ```
 
 After you navigate into the project directory with the command above, you install dependency by running either of the command bellow
@@ -95,4 +95,4 @@ In summary, I will make the app more interactive, visual pleasing to the eyes an
 
 ## Deployment
 
-This application is deployed on vercel and can be acces via [task-manager-app](https://)
+This application is deployed on vercel and can be acces via [task-manager-app](https://task-manager-three-omega-70.vercel.app/)

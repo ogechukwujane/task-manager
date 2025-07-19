@@ -144,25 +144,26 @@ export const Home = () => {
           value={search}
           onSearch={(e) => setSearch(e.target.value)}
         />
-        <section className="flex flex-col gap-6 px-12 py-5">
+        <section className="flex flex-col gap-6 px-4 md:px-12 py-5">
           <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold">Your Task Board</h2>
+            <h2 className="text-base md:text-xl font-bold">Your Task Board</h2>
             <button
-              className="border-2 px-4 py-2 rounded-md bg-[#F50057] text-white"
+              className="border-2 text-xs md:text-base px-2 md:px-4 py-[6px] md:py-2 rounded-md bg-[#F50057] text-white"
               onClick={() => setAddModal({ visible: true, mode: "create" })}
             >
               Add New Task
             </button>
           </div>
           <div className="flex items-center justify-between border-b-[1px] border-b-gray-100 pb-2">
-            <div className="flex gap-3">
-              <p>Overview</p> {filter && <StatusCard status={filter} />}{" "}
+            <div className="flex gap-1 md:gap-3">
+              <p className="text-xs md:text-base">Overview</p>{" "}
+              {filter && <StatusCard status={filter} />}
               {filter && (
                 <p
-                  className="flex items-center cursor-pointer text-gray-400 hover:text-black"
+                  className="flex items-center cursor-pointer text-gray-400 hover:text-black text-xs md:text-base"
                   onClick={() => setFilter("")}
                 >
-                  <RiResetRightFill /> Reset
+                  <RiResetRightFill className="size-3 md:size-15"/> Reset
                 </p>
               )}
             </div>
@@ -192,10 +193,10 @@ export const Home = () => {
               trigger={["click"]}
             >
               <Tag
-                className="flex items-center gap-1 text-sm text-gray-500 font-normal px-2 py-1 cursor-pointer"
+                className="flex items-center gap-1 text-gray-500 font-normal px-2 py-1 cursor-pointer text-xs md:text-sm"
                 onClick={() => {}}
               >
-                <FiFilter size={15} />
+                <FiFilter size={15} className="size-3 md:size-15" />
                 Filters
               </Tag>
             </Dropdown>
@@ -207,7 +208,7 @@ export const Home = () => {
           ) : (
             <>
               {allTaskData && allTaskData.length > 0 ? (
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   {allTaskData?.map((data, index) => (
                     <TaskCard
                       key={index}

@@ -28,7 +28,7 @@ export const DeleteModal = ({
   isLoading,
 }: IDeleteModal) => {
   return (
-    <div className="absolute top-0 left-0 right-0 bottom-0 z-10 bg-[#00000076] flex justify-center items-center">
+    <div className="absolute top-0 left-0 right-0 bottom-0 z-10 bg-[#00000076] flex justify-center items-center p-1">
       <div className="bg-white w-fit flex flex-col gap-5 px-6 py-7 rounded-md">
         <div className="flex flex-col gap-1">
           <p className="text-lg font-medium capitalize">
@@ -60,7 +60,7 @@ export const DeleteModal = ({
 
 export const LogoutModal = ({ onClickLogout, onClickClose }: ILogoutModal) => {
   return (
-    <div className="absolute top-0 left-0 right-0 bottom-0 z-10 bg-[#00000076] flex justify-center items-center">
+    <div className="absolute top-0 left-0 right-0 bottom-0 z-10 bg-[#00000076] flex justify-center items-center p-1">
       <div className="bg-white w-fit flex flex-col gap-5 px-6 py-7 rounded-md">
         <div className="flex flex-col gap-1">
           <p className="text-lg font-medium capitalize">Logout!</p>
@@ -92,7 +92,7 @@ export const ModalComp = ({
   children,
 }: IModalComp) => {
   return (
-    <div className="absolute top-0 left-0 right-0 bottom-0 z-10 bg-[#00000076] flex justify-center items-center">
+    <div className="absolute top-0 left-0 right-0 bottom-0 z-10 bg-[#00000076] flex justify-center items-center p-2">
       <div className="bg-white w-fit flex flex-col gap-5 px-6 py-7 rounded-md">
         <div className="flex flex-col gap-1">{children}</div>
         <div className="flex items-center justify-between">

@@ -37,7 +37,7 @@ export const Login = () => {
 
   return (
     <div className="bg-white h-[100vh] flex p-5 gap-5">
-      <div className="flex flex-col gap-6 bg-gray-50 shadow-md rounded-md px-8 py-10 justify-center w-[40%]">
+      <div className="flex flex-col gap-6 bg-gray-50 shadow-md rounded-md px-8 py-10 justify-center w-[100%] md:w-[40%]">
         <div className="flex flex-col gap-1">
           <h1 className="text-3xl font-medium capitalize">Login!!</h1>
           <p className="text-base">Nice to have you back.</p>
@@ -75,7 +75,7 @@ export const Login = () => {
           </p>
         </div>
       </div>
-      <div className="w-[60%] flex flex-col justify-center items-center">
+      <div className="hidden md:flex w-[60%] flex-col justify-center items-center">
         <h2 className="text-4xl font-Medium">Your Task Manager App</h2>
         <img src={authImage} alt="" className="w-96" />
       </div>

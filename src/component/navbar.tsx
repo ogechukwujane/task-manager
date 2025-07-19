@@ -24,9 +24,9 @@ export const Navbar: FC<INavbar> = ({ onSearch, value, title }) => {
   );
   return (
     <>
-      <div className="flex justify-between h-[70px] px-12 items-center border-b-[1px] border-b-gray-400">
-        <p className="text-xl font-bold capitalize">{title}</p>
-        <div className="w-96 ">
+      <div className="flex justify-between h-[70px] px-4 md:px-12 items-center border-b-[1px] border-b-gray-400">
+        <p className="text-sm md:text-xl font-bold capitalize">{title}</p>
+        <div className="w-40 md:w-96 ">
           <InputComp
             placeholder="Search for task by title"
             leftIcon={<BiSearch size={20} color="gray" />}
@@ -35,7 +35,7 @@ export const Navbar: FC<INavbar> = ({ onSearch, value, title }) => {
           />
         </div>
         <div className="flex gap-4 items-center">
-          <div className="w-[40px] h-[40px] rounded-[50%] bg-gray-300 flex items-center justify-center overflow-hidden">
+          <div className="w-[40px] h-[40px] rounded-[50%] bg-gray-300 md:flex items-center justify-center overflow-hidden hidden">
             <FaUser size={20} />
           </div>
           <Popover placement="bottom" title={hoverText}>
